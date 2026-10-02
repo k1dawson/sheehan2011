@@ -12,7 +12,15 @@ format:
 
 ## Introduction
 
-[No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information. You will likely contact the authors of the original study, so this should be professional and forward facing. It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
+[No abstract is needed.]  Each replication project will have a straightforward, no frills report of the study and results.  These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of data collection.  Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for replication, and any other essential information. You will likely contact the authors of the original study, so this should be professional and forward facing. It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.
+
+This paper developed a behavioral paradigm used to measure the capability of facial recognition in two closely related species of paper wasp. They demonstrated a previously undocumented form of higher social cognition in an invertebrate, and used a species comparison to shed light on the potential evolutionary trajectory of this behavior. These concepts are pertinent to fields of animal social behavior and evolutionary neurobiology, which I am very interested in.
+
+I will need to simulate the raw learning curve data of the wasps for each trial and in each condition. I plan to do a 2x3 study (2 species of wasp x 3 stimuli conditions of face, caterpillar, and pattern) with n=480 trials in each condition (12 wasps with 40 trials each). This is a total of 2880 trials across all conditions with 72 simulated wasps (36 from each species). In order to simulate learning data, I need to be able to increase the likelihood of a correct trial for each wasp at each iteration. The difficult part in doing this simulation will be figuring out how to capture the individual variation in learning ability for each wasp, which will be affected by its species and condition placement. After I have this data, I will need to use generalized estimating equations (GEE) to analyze learning curves with respect to individual wasp differences. Another difficulty will be in understanding how to implement this model and interpret the results.
+
+link to project repo: https://github.com/k1dawson/sheehan2011
+link to original paper in repo: https://github.com/k1dawson/sheehan2011/tree/main/original_paper
+link to original paper publishing site: https://www.science.org/doi/10.1126/science.1211334
 
 
 ## Methods
