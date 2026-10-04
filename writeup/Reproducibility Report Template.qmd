@@ -1,9 +1,9 @@
 ---
-title: "Reproducibility Report for Study X by Sample & Sample (20xx, Psychological Science)"
+title: "Reproducibility Report for Study X by Sheehan & Tibbetts (20xx, Psychological Science)"
 author: "Reproducibility Project Author[s] (contact information)"
 date: "`r format(Sys.time(), '%B %d, %Y')`"
 format:
-  html:
+  pdf:
     toc: true
     toc_depth: 3
 ---
@@ -14,21 +14,31 @@ format:
 
 [No abstract is needed.]  Each reproducibility project will have a straightforward, no frills report of the study and reproducibility results. These reports will be publicly available as supplementary material for the aggregate report(s) of the project as a whole.  Also, to maximize project integrity, the intro and methods will be written and critiqued in advance of your attempt to reproduce the results. Introductions can be just 1-2 paragraphs clarifying the main idea of the original study, the target finding for your reproducibility attempt, and any other essential information.  It will NOT have a literature review -- that is in the original publication. You can write both the introduction and the methods in past tense.  
 
+
 **Clarify key analysis of interest here**  You can also pre-specify additional analyses you plan to do.
 
 ### Justification for choice of study
 
 Please describe why you chose to reproduce the results of this study.
 
+This paper developed a behavioral paradigm used to measure the capability of facial recognition in two closely related species of paper wasp. They demonstrated a previously undocumented form of higher social cognition in an invertebrate, and used a species comparison to shed light on the potential evolutionary trajectory of this behavior. These concepts are pertinent to fields of animal social behavior and evolutionary neurobiology, which I am very interested in. I also believe the findings are strange enough that I am very curious whether or not it would reproduce.
+
+
 ### Anticipated challenges
 
 Do you anticipate running into any challenges when attempting to reproduce these result(s)? If so please, list them here.
 
+I will need to simulate the raw learning curve data of the wasps for each trial and in each condition. For this project, I will only be looking at 6 conditions. I plan to do a 2x3 study (2 species of wasp x 3 stimuli conditions of face, caterpillar, and pattern) with n=480 trials in each condition (12 wasps with 40 trials each). This is a total of 2880 trials across all conditions with 72 simulated wasps (36 from each species). In order to simulate learning, I need to be able to increase the likelihood of a correct trial for each wasp at each iteration. The difficult part in doing this simulation will be figuring out how to capture the individual variation in learning ability for each wasp, which will be affected by its species and condition placement. After I have this data, I will need to use generalized estimating equations (GEE) to analyze learning curves with respect to individual wasp differences. Another difficulty will be in understanding how to implement this model and interpret the results. To my understanding, there are packages in R that can make this fairly simple, I will need to focus on organizing my data in the right way.
+
+
 ### Links
 
-Project repository (on Github): 
+Project repository (on Github): [link to project repo](https://github.com/k1dawson/sheehan2011)\
 
-Original paper (as hosted in your repo): 
+
+Original paper (as hosted in your repo): [link to original paper in repo](https://github.com/k1dawson/sheehan2011/tree/main/original_paper)\
+[link to original paper publishing site](https://www.science.org/doi/10.1126/science.1211334)\
+
 
 ## Methods
 
